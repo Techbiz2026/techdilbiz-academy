@@ -34,6 +34,39 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+}.registration-section{
+    text-align:center;
+    padding:80px 20px;
+    background:#0d2344;
+}
+
+.registration-section h2{
+    color:#fff;
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.registration-section p{
+    color:#ddd;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.register-btn{
+    display:inline-block;
+    background:#25D366;
+    color:#fff;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.register-btn:hover{
+    background:#1ea952;
+    transform:scale(1.05);
 }
 
 .logo img {
@@ -903,7 +936,6 @@ footer {
 }
 
 /* Responsive */
-
 @media (max-width: 900px) {
     .contact {
         grid-template-columns: 1fr;
@@ -913,3 +945,270 @@ footer {
         font-size: 30px;
     }
 }
+
+/* ===== Instructors ===== */
+
+/* ===== Professional Training Areas ===== */
+
+.instructors{
+    padding:100px 8%;
+    background:linear-gradient(180deg,#081b35,#0d2c56);
+}
+
+.instructors h2{
+    text-align:center;
+    font-size:42px;
+    color:#fff;
+}
+
+.instructor-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:55px;
+}
+
+.instructor-card{
+    position:relative;
+    overflow:hidden;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    border-radius:22px;
+    padding:35px 30px;
+    border:1px solid rgba(255,255,255,.15);
+    transition:.4s;
+    text-align:center;
+}
+
+.instructor-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:linear-gradient(90deg,#FFD54A,#00C9FF);
+}
+
+.instructor-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 45px rgba(0,201,255,.25);
+}
+
+.instructor-card h3{
+    color:#FFD54A;
+    font-size:26px;
+    margin-bottom:15px;
+}
+
+.instructor-card span{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:30px;
+    background:#00C9FF;
+    color:#071b35;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.instructor-card p{
+    color:#f2f2f2;
+    line-height:1.9;
+}
+
+/* ===== FAQ ===== */
+
+.faq {
+    padding: 80px 8%;
+    background: #071b35;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 40px auto 0;
+}
+
+.faq details {
+    background: #12325d;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.faq summary{
+    padding:18px 22px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:bold;
+    color:#FFD54A;
+    list-style:none;
+}
+
+.faq summary::-webkit-details-marker{
+    display:none;
+}
+
+.faq p{
+    padding:0 22px 20px;
+    color:#f2f2f2;
+    line-height:1.8;
+}/* ===== Why Choose Us ===== */
+
+.why-us{
+    padding:100px 8%;
+    background:#071b35;
+}
+
+.why-us h2{
+    text-align:center;
+    color:#fff;
+    font-size:42px;
+}
+
+.why-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:55px;
+}
+
+.why-card{
+    position:relative;
+    background:#12325d;
+    border-radius:22px;
+    padding:35px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.12);
+    transition:.4s;
+}
+
+.why-card:hover{
+    transform:translateY(-12px);
+    background:#18457f;
+    box-shadow:0 18px 40px rgba(0,0,0,.30);
+}
+
+.why-card::before{
+    content:"✓";
+    width:65px;
+    height:65px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#FFD54A;
+    color:#071b35;
+    font-size:32px;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.why-card h3{
+    color:#FFD54A;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.why-card p{
+    color:#f2f2f2;
+    line-height:1.9;
+}
+
+/* ===== How It Works ===== */
+
+.how-it-works{
+    padding:80px 8%;
+    background:#0b2346;
+}
+
+.steps-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:45px;
+}
+
+.step-card{
+    background:#12325d;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    transition:.35s;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.step-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.step-number{
+    width:60px;
+    height:60px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#FFD54A;
+    color:#071b35;
+    font-size:26px;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.step-card h3{
+    color:#FFD54A;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.step-card p{
+    color:#f2f2f2;
+    line-height:1.8;
+}
+
+/* Shared section headings */
+.instructors .section-title,
+.why-us .section-title {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.instructors .section-title p,
+.why-us .section-title p {
+    margin-top: 16px;
+    color: #dbe8f6;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+/* Responsive improvements for training areas and why-us */
+@media (max-width: 700px) {
+    .instructors,
+    .why-us {
+        padding: 70px 7%;
+    }
+
+    .instructors h2,
+    .why-us h2 {
+        font-size: 30px;
+        line-height: 1.5;
+    }
+
+    .instructors .section-title p,
+    .why-us .section-title p {
+        font-size: 16px;
+    }
+
+    .instructor-container,
+    .why-container {
+        margin-top: 35px;
+        grid-template-columns: 1fr;
+    }
+
+    .instructor-card,
+    .why-card {
+        padding: 28px 22px;
+    }
+}
+
