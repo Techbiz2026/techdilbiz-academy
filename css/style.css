@@ -1905,5 +1905,148 @@ footer {
     .about-slogan p {
         font-size: 16px;
     }
+}/* =========================
+   كۇرسلىرىمىز — 4 چوڭ كارتا
+========================= */
+
+.courses {
+    padding: 90px 20px;
+    background: #f5f8fc;
+}
+
+.course-container {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.course-container .course-card {
+    display: block;
+    position: relative;
+    min-height: 390px;
+    overflow: hidden;
+    border-radius: 22px;
+    background: #06162b;
+    box-shadow: 0 14px 35px rgba(6, 22, 43, 0.16);
+    text-decoration: none;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.course-container .course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(6, 22, 43, 0.24);
+}
+
+.course-container .course-card img {
+    width: 100%;
+    height: 100%;
+    min-height: 390px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.course-container .course-card:hover img {
+    transform: scale(1.06);
+}
+
+.course-container .course-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(3, 14, 34, 0.96) 0%,
+        rgba(3, 14, 34, 0.7) 42%,
+        rgba(3, 14, 34, 0.12) 75%
+    );
+}
+
+.course-content {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 30px;
+    color: #ffffff;
+}
+
+.course-content h3 {
+    margin: 0 0 12px;
+    color: #ffb300;
+    font-size: 28px;
+    line-height: 1.4;
+}
+
+.course-content p {
+    margin: 0 0 18px;
+    color: #eef3f8;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.course-content span {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.course-container .course-card:hover .course-content span {
+    background: #ffb300;
+    border-color: #ffb300;
+    color: #06162b;
+}
+
+/* تاختا كومپيۇتېر */
+@media (max-width: 992px) {
+    .course-container {
+        gap: 24px;
+    }
+
+    .course-container .course-card,
+    .course-container .course-card img {
+        min-height: 350px;
+    }
+
+    .course-content h3 {
+        font-size: 25px;
+    }
+}
+
+/* يانفون */
+@media (max-width: 700px) {
+    .courses {
+        padding: 60px 15px;
+    }
+
+    .course-container {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .course-container .course-card,
+    .course-container .course-card img {
+        min-height: 330px;
+    }
+
+    .course-content {
+        padding: 24px 20px;
+    }
+
+    .course-content h3 {
+        font-size: 23px;
+    }
+
+    .course-content p {
+        font-size: 15px;
+    }
 }
 
