@@ -2299,14 +2299,27 @@ footer {
     .detail-course-card p {
         min-height: auto;
     }
-}.languages-detail-hero{
-    background-image: url("../images/languages.jpg");
+}.detail-course-card {
+    padding: 0 0 30px;
+    overflow: hidden;
 }
 
-.social-detail-hero{
-    background-image: url("../images/social.jpg");
+.detail-course-image {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 25px;
 }
 
-.islamic-detail-hero{
-    background-image: url("../images/islamic.jpg");
+.detail-course-card h3,
+.detail-course-card p {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.detail-course-card a {
+    display: inline-block;
+    margin-top: 20px;
+}
 
