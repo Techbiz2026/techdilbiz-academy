@@ -2412,5 +2412,11 @@ footer {
     .detail-section-heading h2 {
         font-size: 28px;
     }
+}.detail-course-image{
+    width:100% !important;
+    height:220px !important;
+    display:block !important;
+    object-fit:cover;
+    border:3px solid red;
 }
 
