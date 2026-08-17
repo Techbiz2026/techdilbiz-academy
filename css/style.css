@@ -1212,15 +1212,13 @@ footer {
     }
 }/* ===== Academy Features ===== */
 
-.academy-features{
+.academy-features {
+    width: 90%;
+    margin: 70px auto;
 
-    width:90%;
-    margin:70px auto;
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
 }
 
 .feature-card{
