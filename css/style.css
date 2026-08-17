@@ -2440,5 +2440,37 @@ footer {
 
 .detail-course-card{
     overflow:hidden;
+}/* Language Switcher */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.language-switcher span {
+    font-size: 20px;
+}
+
+.language-switcher select {
+    background: #0b2545;
+    color: #ffffff;
+    border: 1px solid #00c8ff;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.language-switcher select:hover {
+    border-color: #ffb000;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .language-switcher select {
+        padding: 6px 8px;
+        font-size: 13px;
+    }
 }
 
