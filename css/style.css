@@ -2470,5 +2470,16 @@ footer {
         padding: 6px 8px;
         font-size: 13px;
     }
+}@media (max-width: 600px) {
+    .academy-features {
+        width: 94%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin: 40px auto;
+    }
+
+    .feature-card {
+        padding: 25px 10px;
+    }
 }
 
