@@ -2473,19 +2473,22 @@ footer {
     }
 
     .academy-features {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 12px !important;
-        width: 96% !important;
-        margin: 30px auto !important;
-    }
+    width: 94%;
+    max-width: 1700px;
+    margin: 70px auto;
 
-    .academy-features .feature-card {
-        width: 100% !important;
-        min-width: 0 !important;
-        margin: 0 !important;
-        padding: 20px 8px !important;
-        box-sizing: border-box;
-    }
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
 }
 
+.feature-card {
+    width: 100%;
+    min-height: 245px;
+    background: #ffffff;
+    border-radius: 18px;
+    text-align: center;
+    padding: 40px 25px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
