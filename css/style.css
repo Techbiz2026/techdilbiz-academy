@@ -2472,4 +2472,20 @@ footer {
         padding: 6px 8px;
         font-size: 13px;
     }
+    }/* ===== Desktop: 4 cards side by side ===== */
+@media (min-width: 769px) {
+    .academy-features {
+        display: grid !important;
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+        width: 94% !important;
+        max-width: 1700px !important;
+        gap: 28px !important;
+        margin: 70px auto !important;
     }
+
+    .academy-features > .feature-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+    }
+}
