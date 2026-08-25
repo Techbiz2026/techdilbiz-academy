@@ -89,44 +89,8 @@ document.addEventListener("DOMContentLoaded", function () {
         startSlider();
     }
 });
-// Statistics Counter Animation
 
-const counters = document.querySelectorAll(".counter");
-
-const counterObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-
-        if (!entry.isIntersecting) return;
-
-        const counter = entry.target;
-        const target = Number(counter.dataset.target);
-
-        let current = 0;
-        const step = Math.max(1, Math.ceil(target / 100));
-
-        const timer = setInterval(() => {
-
-            current += step;
-
-            if (current >= target) {
-                current = target;
-                clearInterval(timer);
-            }
-
-            counter.textContent = current;
-
-        }, 20);
-
-        counterObserver.unobserve(counter);
-
-    });
-}, {
-    threshold: 0.4
-});
-
-counters.forEach(counter => {
-    counterObserver.observe(counter);
-});// Contact Form -> WhatsApp
+// Contact Form -> WhatsApp
 
 const contactForm = document.getElementById("contactForm");
 
