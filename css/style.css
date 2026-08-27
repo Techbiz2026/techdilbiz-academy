@@ -2443,7 +2443,11 @@ footer {
 .language-switcher {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 7px;
+    width: 150px;
+    flex-shrink: 0;
+    direction: ltr;
 }
 
 .language-switcher span {
@@ -2451,6 +2455,8 @@ footer {
 }
 
 .language-switcher select {
+    width: 110px;
+text-align: center;
     background: #0b2545;
     color: #ffffff;
     border: 1px solid #00c8ff;
@@ -2506,4 +2512,25 @@ footer {
         margin: 0 !important;
         padding: 30px 20px !important;
     }
+}/* تىل تاللاش ئورنىنى بارلىق تىللاردا مۇقىملاش */
+.navbar {
+    position: relative;
+}
+
+.language-switcher {
+    position: fixed;
+    right: 6%;
+    top: 28px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    direction: ltr;
+    z-index: 2000;
+}
+
+.language-switcher select {
+    width: 110px;
+    text-align: center;
 }
