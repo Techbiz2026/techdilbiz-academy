@@ -2533,24 +2533,31 @@ text-align: center;
 .language-switcher select {
     width: 110px;
     text-align: center;
-}/* Language switcher - same position on all languages */
-html[dir="rtl"] .language-switcher,
-html[dir="ltr"] .language-switcher {
-    position: fixed !important;
-    top: 28px !important;
-    right: 6% !important;
-    left: auto !important;
-    width: 150px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 7px !important;
-    direction: ltr !important;
-    z-index: 9999 !important;
+/* Navbar direction same for all languages */
+.navbar {
+    direction: ltr;
 }
 
-html[dir="rtl"] .language-switcher select,
-html[dir="ltr"] .language-switcher select {
-    width: 110px !important;
-    text-align: center !important;
+.logo {
+    flex-shrink: 0;
+}
+
+.nav-links {
+    direction: ltr;
+}
+
+.language-switcher {
+    position: static;
+    width: 150px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    direction: ltr;
+}
+
+.language-switcher select {
+    width: 110px;
+    text-align: center;
 }
