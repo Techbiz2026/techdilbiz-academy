@@ -73,9 +73,6 @@ header {
     width: 135px;
     height: 76px;
     object-fit: contain;
-    background: white;
-    padding: 5px;
-    border-radius: 12px;
 }
 
 .nav-links {
