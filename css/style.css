@@ -2608,4 +2608,12 @@ text-align: center;
     width: 150px !important;
     margin: 0 !important;
     justify-self: end !important;
+.hero-logo {
+    width: 400px;
+    max-width: 85%;
+    height: auto;
+    display: block;
+    margin: 0 auto 25px;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 20px rgba(0, 170, 255, 0.35));
 }
