@@ -2833,3 +2833,26 @@ img {
     .hero-text {
         font-size: 16px !important;
     }
+    /* ===== MOBILE MENU FIX ===== */
+
+@media (max-width: 700px) {
+
+    .nav-links {
+        display: none !important;
+        width: 100% !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 18px 0 !important;
+        gap: 18px !important;
+    }
+
+    .nav-links.show {
+        display: flex !important;
+    }
+
+    .menu-button {
+        display: block !important;
+        cursor: pointer !important;
+        z-index: 1001 !important;
+    }
+}
