@@ -2584,30 +2584,74 @@ text-align: center;
     flex-shrink: 0 !important;
     margin: 0 !important;
 }/* ===== Navbar final fix ===== */
+/* ===== FINAL RESPONSIVE FIX ===== */
+
+/* General */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ===== Desktop Navbar ===== */
 
 .navbar {
-    display: grid !important;
-    grid-template-columns: 150px 1fr 170px !important;
+    display: flex !important;
     align-items: center !important;
+    justify-content: space-between !important;
     width: 100% !important;
+    max-width: 100% !important;
+    gap: 20px !important;
 }
 
 .logo {
-    grid-column: 1 !important;
+    flex-shrink: 1 !important;
+}
+
+.logo img {
+    max-width: 160px;
+    height: auto;
 }
 
 .nav-links {
-    grid-column: 2 !important;
-    justify-content: center !important;
-    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .language-switcher {
-    grid-column: 3 !important;
-    position: static !important;
-    width: 150px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 7px !important;
+    width: auto !important;
+    min-width: 0 !important;
+    flex-shrink: 0 !important;
     margin: 0 !important;
-    justify-self: end !important;
+}
+
+.language-switcher select {
+    width: 110px !important;
+    max-width: 110px !important;
+}
+
+
+/* ===== Hero Logo ===== */
+
 .hero-logo {
     width: 400px;
     max-width: 85%;
@@ -2615,5 +2659,177 @@ text-align: center;
     display: block;
     margin: 0 auto 25px;
     object-fit: contain;
-    filter: drop-shadow(0 8px 20px rgba(0, 170, 255, 0.35));
 }
+
+
+/* ===== Mobile ===== */
+
+@media (max-width: 700px) {
+
+    html,
+    body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    .navbar {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: 85px !important;
+        padding: 10px 12px !important;
+        gap: 10px !important;
+        justify-content: space-between !important;
+        overflow: hidden !important;
+    }
+
+    /* Logo */
+    .logo {
+        flex: 0 1 auto !important;
+        min-width: 0 !important;
+    }
+
+    .logo img {
+        width: 125px !important;
+        max-width: 125px !important;
+        height: auto !important;
+    }
+
+    /* Hamburger */
+    .menu-button {
+        display: block !important;
+        flex: 0 0 auto !important;
+        font-size: 32px !important;
+        padding: 4px !important;
+        margin: 0 !important;
+    }
+
+    /* Navigation links */
+    .nav-links {
+        display: none !important;
+    }
+
+    /* Language */
+    .language-switcher {
+        display: flex !important;
+        flex: 0 0 auto !important;
+        width: auto !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        gap: 4px !important;
+    }
+
+    .language-switcher span {
+        font-size: 19px !important;
+    }
+
+    .language-switcher select {
+        width: 100px !important;
+        max-width: 100px !important;
+        padding: 7px 4px !important;
+        font-size: 12px !important;
+    }
+
+    /* Hero */
+    .hero {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .hero-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .hero-logo {
+        width: 330px !important;
+        max-width: 85% !important;
+        height: auto !important;
+    }
+
+    .hero h1 {
+        max-width: 100% !important;
+        font-size: 38px !important;
+        line-height: 1.5 !important;
+        word-wrap: break-word !important;
+    }
+
+    .hero-text {
+        width: 100% !important;
+        max-width: 100% !important;
+        font-size: 18px !important;
+        line-height: 2 !important;
+        padding: 0 !important;
+    }
+
+    .hero-buttons {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .hero-buttons a {
+        max-width: 100% !important;
+    }
+
+    /* Courses */
+    .course-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 15px !important;
+    }
+
+    .course-card {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Sections */
+    section {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+}
+
+
+/* ===== Very Small Phones ===== */
+
+@media (max-width: 400px) {
+
+    .navbar {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        gap: 6px !important;
+    }
+
+    .logo img {
+        width: 105px !important;
+        max-width: 105px !important;
+    }
+
+    .menu-button {
+        font-size: 28px !important;
+    }
+
+    .language-switcher select {
+        width: 90px !important;
+        max-width: 90px !important;
+        font-size: 11px !important;
+    }
+
+    .hero-logo {
+        width: 280px !important;
+        max-width: 85% !important;
+    }
+
+    .hero h1 {
+        font-size: 32px !important;
+    }
+
+    .hero-text {
+        font-size: 16px !important;
+    }
