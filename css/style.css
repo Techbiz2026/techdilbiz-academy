@@ -2855,4 +2855,31 @@ img {
         cursor: pointer !important;
         z-index: 1001 !important;
     }
+    /* ===== MOBILE MENU FIX ===== */
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-wrap: wrap !important;
+        overflow: visible !important;
+    }
+
+    .nav-links {
+        display: none !important;
+        width: 100% !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 18px !important;
+        padding: 18px 0 !important;
+        order: 5 !important;
+    }
+
+    .nav-links.show {
+        display: flex !important;
+    }
+
+    .menu-button {
+        display: block !important;
+        cursor: pointer !important;
+        z-index: 1001 !important;
+    }
 }
