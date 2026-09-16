@@ -2682,7 +2682,7 @@ img {
         padding: 10px 12px !important;
         gap: 10px !important;
         justify-content: space-between !important;
-        overflow: hidden !important;
+        overflow: visible !important;
     }
 
     /* Logo */
@@ -2899,4 +2899,45 @@ img {
         cursor: pointer !important;
     }
 
+}
+/* ===== MOBILE LANGUAGE POSITION FIX ===== */
+@media (max-width: 700px) {
+
+    .navbar {
+        position: relative !important;
+        overflow: visible !important;
+    }
+
+    .language-switcher {
+        display: flex !important;
+        position: absolute !important;
+        right: 65px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        z-index: 9999 !important;
+        width: auto !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+    }
+
+    .language-switcher span {
+        display: inline-block !important;
+        font-size: 18px !important;
+    }
+
+    .language-switcher select {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 95px !important;
+        max-width: 95px !important;
+        padding: 7px 4px !important;
+        font-size: 12px !important;
+        background: #0b2545 !important;
+        color: white !important;
+        border: 1px solid #00c8ff !important;
+        position: relative !important;
+        z-index: 10000 !important;
+        pointer-events: auto !important;
+    }
 }
