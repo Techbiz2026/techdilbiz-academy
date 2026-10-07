@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'ALKATIP';
+    src: url('./fonts/ALKATIP.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +12,8 @@
 html {
     scroll-behavior: smooth;
 }
-
-body {
-    font-family: Arial, sans-serif;
+ body {
+    font-family: 'ALKATIP', sans-serif;
     background: #071b35;
     color: white;
     overflow-x: hidden;
