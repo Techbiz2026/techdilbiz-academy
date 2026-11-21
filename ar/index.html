@@ -754,6 +754,48 @@
     }
 }
 </style>
+
+<audio id="siteMusic" autoplay loop>
+  <source src="audio/song.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicButton" style="
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  z-index:9999;
+  background:#06458a;
+  color:white;
+  border:2px solid #d9ad48;
+  border-radius:30px;
+  padding:12px 20px;
+  cursor:pointer;
+  display:none;
+">
+  🎵 تشغيل الموسيقى
+</button>
+
+<script>
+const music = document.getElementById("siteMusic");
+const btn = document.getElementById("musicButton");
+
+music.volume = 0.5;
+
+music.play().catch(() => {
+  btn.style.display = "block";
+});
+
+btn.addEventListener("click", async () => {
+  if (music.paused) {
+    await music.play();
+    btn.textContent = "⏸ إيقاف الموسيقى";
+  } else {
+    music.pause();
+    btn.textContent = "🎵 تشغيل الموسيقى";
+  }
+});
+</script>
+
 </body>
 </html>
         
